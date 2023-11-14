@@ -1283,7 +1283,19 @@ const sites: Sites = {
     sourceParams: {
       dbShortcut: 'SAAR'
     }
-  }
+  },
+   'www.braunschweiger-zeitung.de': {
+    selectors: {
+      query: 'h2',
+      date: 'time',
+      paywall: '#paywall-container',
+      main: '.article__header__intro'
+    },
+    source: 'genios.de',
+    sourceParams: {
+      dbShortcut: 'BRZE'
+    }
+  },
 }
 
 export default sites
